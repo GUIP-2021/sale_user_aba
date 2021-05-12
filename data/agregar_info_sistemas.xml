@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!--ETAPAS OPERACIONES-->
+         <record id="no_planificado1" model="flujo_etapas_sistemas">
+            <field name="name">No planificado</field>
+            <field name="sequence">0</field>
+            <field name="probability">10</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="creacion_comercio2"  model="flujo_etapas_sistemas">
+            <field name="name">Creacion de comercio</field>
+            <field name="sequence">1</field>
+            <field name="probability">20</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="creacion_usuario3"  model="flujo_etapas_sistemas">
+            <field name="name">Creacion de usuario</field>
+            <field name="sequence">2</field>
+            <field name="probability">40</field>
+            <field name="active">True</field>
+            <field name="envio_aprobacion">True</field>
+        </record>
+
+
+        <record id="operaciones4"  model="flujo_etapas_sistemas">
+            <field name="name">Operaciones</field>
+            <field name="sequence">3</field>
+            <field name="probability">50</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="asignacion_canal5"  model="flujo_etapas_sistemas">
+            <field name="name">Asignacion de canal</field>
+            <field name="sequence">4</field>
+            <field name="probability">70</field>
+            <field name="active">True</field>
+        </record>
+
+       <record id="finalizacion6"  model="flujo_etapas_sistemas">
+            <field name="name">Finalizacion</field>
+            <field name="sequence">5</field>
+            <field name="probability">100</field>
+            <field name="active">True</field>
+        </record>
+
+        <record id="devuelto7"  model="flujo_etapas_sistemas">
+            <field name="name">Cancelado</field>
+            <field name="sequence">6</field>
+            <field name="probability">120</field>
+            <field name="active">True</field>
+        </record>
+
+
+    </data>
+</odoo>
